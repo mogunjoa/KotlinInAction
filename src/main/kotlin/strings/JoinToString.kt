@@ -17,3 +17,9 @@ fun<T> Collection<T>.joinToString(
     return builder.toString()
 }
 
+fun Collection<String>.join(
+    separator: String = ", ",
+    prefix: String = "",
+    postfix: String = "",
+) = joinToString(separator, prefix, postfix)
+

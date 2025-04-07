@@ -1,5 +1,6 @@
 package org.mogun
 
+import strings.join
 import org.mogun.strings.lastChar as last   // 확장 함수 이름 변경
 import strings.joinToString
 import java.io.BufferedReader
@@ -31,4 +32,6 @@ fun main() {
 
 //    val sample = "홀리몰리 할리갈리"
 //    println(sample.last())
+
+    println(listOf("one", "two", "three").join(" ", "(", ")"))
 }
