@@ -1,5 +1,6 @@
 package org.mogun
 
+import strings.joinToString
 import java.io.BufferedReader
 import java.io.StringReader
 
@@ -14,6 +15,10 @@ fun main() {
 //        println(fizzbuzz(i))
 //    }
 
-    val reader = BufferedReader(StringReader("2fd"))
-    readNumber(reader)
+//    val reader = BufferedReader(StringReader("2fd"))
+//    readNumber(reader)
+
+    val list = listOf(1, 2, 3)
+    println(joinToString(list, ";", "(", ")"))
+    println(joinToString(list))
 }
