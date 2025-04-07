@@ -1,5 +1,6 @@
 package org.mogun
 
+import org.mogun.strings.lastChar as last   // 확장 함수 이름 변경
 import strings.joinToString
 import java.io.BufferedReader
 import java.io.StringReader
@@ -18,7 +19,10 @@ fun main() {
 //    val reader = BufferedReader(StringReader("2fd"))
 //    readNumber(reader)
 
-    val list = listOf(1, 2, 3)
-    println(joinToString(list, ";", "(", ")"))
-    println(joinToString(list))
+//    val list = listOf(1, 2, 3)
+//    println(joinToString(list, ";", "(", ")"))
+//    println(joinToString(list))
+
+    val sample = "홀리몰리 할리갈리"
+    println(sample.last())
 }
