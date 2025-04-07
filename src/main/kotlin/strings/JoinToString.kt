@@ -1,16 +1,15 @@
 package strings
 
-fun<T> joinToString(
-    collection: Collection<T>,
+fun<T> Collection<T>.joinToString(
     separator: String = ", ",
     prefix: String = "",
     postfix: String = "",
 ): String {
     val builder = StringBuilder(prefix)
 
-    for((index, value) in collection.withIndex()) {
+    for((index, element) in this.withIndex()) {
         if(index > 0) builder.append(separator)
-        builder.append(value)
+        builder.append(element)
     }
 
     builder.append(postfix)

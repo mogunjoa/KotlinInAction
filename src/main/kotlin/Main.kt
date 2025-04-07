@@ -19,10 +19,16 @@ fun main() {
 //    val reader = BufferedReader(StringReader("2fd"))
 //    readNumber(reader)
 
-//    val list = listOf(1, 2, 3)
-//    println(joinToString(list, ";", "(", ")"))
-//    println(joinToString(list))
+    val list = listOf(1, 2, 3)
+    println(
+        list.joinToString(
+            separator = ";",
+            prefix = "(",
+            postfix = ")"
+        )
+    )
+    println(list.joinToString())
 
-    val sample = "홀리몰리 할리갈리"
-    println(sample.last())
+//    val sample = "홀리몰리 할리갈리"
+//    println(sample.last())
 }
